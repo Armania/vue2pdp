@@ -1,0 +1,134 @@
+body {
+	margin-top:-1rem;
+ 	font-family:sans-serif;
+	h1,h2,h3,h4,h5,h6 {
+		font-family:sans-serif;
+	}
+
+	.nav-bar {
+		background-color: #20bf55;
+		background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+		height: auto;
+		margin-bottom: 1rem;
+		width:100%;
+		h1 {
+			margin-top:1rem;
+			margin-left:1rem;
+			padding:1rem;
+			text-align:center;
+		}
+		a {
+			color:#efefef;
+			text-decoration:none;
+			&:hover {
+				text-decoration:none;
+				color:#fff;
+			}
+		}
+	}
+	#app {
+		.cart {
+			color:#fff;
+			display:inline-block;
+			padding:0rem 1rem;
+			float:right;
+			margin-top:-5rem;
+		} // .cart end
+		.product {
+		max-width: 998px;
+		margin:auto;
+		display:table;
+		.product-image {
+				display:inline-block;
+				vertical-align:top;
+				max-width:46%;
+				img {
+					width:100%;
+					display:block;
+				} // img end
+			} // .product-image end
+			.product-info {
+				display:inline-block;
+				padding: 0rem 1rem;
+				max-width: 50%;
+				p {
+					margin:0rem;
+				}
+				h3 {
+					margin-bottom:0rem;
+				}
+				.colors-list {
+					list-style:none;
+					padding:0rem;
+					li {
+						display:inline-block;
+						margin:0rem 1rem 0rem 0rem;
+						}
+					.colors-box {
+						width:3rem;
+						height:3rem;
+						background:#ccc;
+						border-radius:50%;
+						cursor:pointer;
+					}
+					.color-title {
+						text-align:center;
+						text-transform:uppercase;
+						margin-top:0rem;
+					}
+				} // .colors-list end
+
+			} // .product-info end
+			.tabs-container {
+				margin:1rem 0rem;
+				& > div {
+					background:#eee;
+					padding:1rem;
+					border-radius: 0rem 1rem 1rem 1rem;
+					min-height:20rem;
+				}
+			}
+				.tab {
+					cursor:pointer;
+					padding:1rem 2rem;
+					border-radius:8px 8px 0px 0px;
+					background:#fefefe;
+					display:inline-block;
+					margin-right:1rem;
+				}
+				.activetab {
+					font-weight:bold;
+					background:#eee;
+					color:#000;
+				}
+		} // .product end
+	} // #app end
+	button {
+		background-color: #9cdaf8;
+		background-image: linear-gradient(315deg, #9cdaf8 0%, #98fcbd 74%);
+		border-radius:.5rem;
+		border-color:#9cdaf8;
+		cursor:pointer;
+		margin:.5rem;
+		padding:1rem;
+		&:hover {
+			text-decoration:underline;
+		}
+		&.disabled {
+			background:#ccc;
+			cursor:not-allowed;
+		}
+	}
+	.strike {
+		text-decoration:line-through;
+	}
+	footer {
+	  background: linear-gradient(-90deg, #000, #222);
+	  height: 60px;
+	  margin-top: 15px;
+	}
+	.reviews-list {
+		list-style:none;
+	}
+
+} //body-end
